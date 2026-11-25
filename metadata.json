@@ -1,0 +1,6 @@
+{
+  "name": "NAFA — Corporate Business Ecosystem",
+  "description": "NAFA is an evolving corporate business ecosystem built around ideas, ventures, and meaningful opportunities. One vision. Multiple ventures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-nafa-black: #000000;
+  --color-nafa-white: #ffffff;
+  --color-nafa-dark: #171717;
+  --color-nafa-muted: #888888;
+  --color-nafa-border: #e5e5e5;
+  --color-nafa-surface: #f5f5f5;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  p,
+  span,
+  a,
+  li,
+  input,
+  textarea,
+  select,
+  button {
+    font-family: var(--font-sans);
+  }
+
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+}
+
+@keyframes slow-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 24s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-slow-zoom {
+    animation: none;
+  }
+}
